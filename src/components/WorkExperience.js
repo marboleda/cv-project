@@ -1,19 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const workExperience = (props) => {
-    return(
-        <div className="workExperience">
-        <div className="workExperience">
-            <form name="work-experience">
-                <h2>Work Experience</h2>
 
-                
+class WorkExperience extends Component {
+    constructor(props) {
+        super(props);
+    }
 
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-        </div>
-    )
+    render() {
+        return(
+            <div className="workExperience">
+            </div>
+        )
+    }
 }
 
-export default workExperience
+export default WorkExperience

@@ -3,6 +3,9 @@ import './App.css';
 import GeneralInfo from './components/GeneralInfo'
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+  }
 
   render() {
     return (

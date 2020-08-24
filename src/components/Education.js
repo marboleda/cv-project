@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const education = (props) => {
-    return(
-        <div className="education">
+class Education extends Component {
+    constructor(props) {
+        super(props);
+    }
 
-        </div>
-    )
+    render() {
+        return(
+            <div className="education">
+
+            </div>
+        )
+    }
 }
 
-export default education
+export default Education
