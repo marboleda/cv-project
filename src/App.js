@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import GeneralInfo from './components/GeneralInfo'
+import WorkExperience from './components/WorkExperience'
+import Education from './components/Education'
 
 class App extends Component {
   constructor(props) {
@@ -11,6 +13,8 @@ class App extends Component {
     return (
       <div className="App">
         <GeneralInfo />
+        <WorkExperience />
+        <Education />
       </div>
     );
   }
