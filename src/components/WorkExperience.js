@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import WorkExperienceEntry from './WorkExperienceEntry'
 
-
 class WorkExperience extends Component {
     constructor(props) {
         super(props);

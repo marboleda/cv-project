@@ -1,0 +1,4 @@
+.workExperienceEntry {
+    display: flex;
+    flex-direction: column;
+}
