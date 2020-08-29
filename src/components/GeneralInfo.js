@@ -14,17 +14,17 @@ const generalInfo = (props) => {
                     <label for="name">
                         <strong>Name:</strong>
                     </label>
-                    <input type="text" name="name" onChange={props.nameChange} required />
+                    <input type="text" name="name" onChange={props.nameChange} value={props.name} required />
 
                     <label for="email">
                         <strong>Email:</strong>
                     </label>
-                    <input type="text" name="email" onChange={props.emailChange} />
+                    <input type="text" name="email" onChange={props.emailChange} value={props.email} />
 
                     <label for="phone">
                         <strong>Phone Number:</strong>
                     </label>
-                    <input type="text" name="phone" onChange={props.phoneChange} />
+                    <input type="text" name="phone" onChange={props.phoneChange} value={props.phone}/>
 
                     <button type="submit">Submit</button>
                 </form>
