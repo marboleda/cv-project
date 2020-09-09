@@ -13,6 +13,7 @@ class App extends Component {
       generalInfoName: "",
       generalInfoEmail: "",
       generalInfoPhoneNumber: "",
+      editingWorkExperience: true,
     }
 
     this.generalInfoNameChangeHandler = this.generalInfoNameChangeHandler.bind(this);
@@ -53,7 +54,7 @@ class App extends Component {
   }
 
   render() {
-    const { editingGeneralInfo, generalInfoName, generalInfoEmail, generalInfoPhoneNumber } = this.state;
+    const { editingGeneralInfo, generalInfoName, generalInfoEmail, generalInfoPhoneNumber, editingWorkExperience } = this.state;
 
     return (
       <div className="App">
@@ -68,7 +69,9 @@ class App extends Component {
           phoneChange={this.generalInfoPhoneNumberChangeHandler}
           emailChange={this.generalInfoEmailChangeHandler}
         />
-        <WorkExperience />
+        <WorkExperience
+          isEditing={editingWorkExperience} 
+        />
         <Education />
       </div>
     );
