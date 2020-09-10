@@ -8,6 +8,8 @@ class WorkExperience extends Component {
         this.state = {
             workExperienceEntries: []
         }
+
+        this.onChangeInput = this.onChangeInput.bind(this);
     }
 
     addButtonHandler = () => {
@@ -55,30 +57,7 @@ class WorkExperience extends Component {
                 <h2>Work Experience</h2>
                 {workExperienceEntries.map((entry, index) => {
                     return (
-                    <form data-work-experience-form={index}>
-                        <span>
-                        <label for="role">Role:</label>
-                        <input type="text" name="role" onChange={(e) => this.onChangeInput(e, index, 'role')} value={entry.role} />
-                        </span>
-            
-                        <span>
-                        <label for="company">Company:</label>
-                        <input type="text" name="company" value={entry.company}/>
-                        </span>
-            
-                        <span>
-                        <label for="start-date">Start Date:</label>
-                        <input type="text" name="start-date" value={entry.startDate}/> {/* Make this one of those date selectors when you learn how to use those */}
-            
-                        <label for="end-date">End Date:</label>
-                        <input type="text" name="end-date" value={entry.endDate}/> {/* Make this one of those date selectors when you learn how to use those */}
-                        </span>
-            
-                        <span>
-                        <label for="description">Responsibilities / Accomplishments:</label>
-                        <textarea name="description" value={entry.description}/>
-                        </span>
-                    </form>)
+                    <WorkExperienceEntry index={index} changeInput={this.onChangeInput} entryInfo={entry}/>)
                 })}
                 <button onClick={this.addButtonHandler}>Add</button>
             </div>

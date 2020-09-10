@@ -2,9 +2,34 @@ import React from 'react';
 import './WorkExperienceEntry.css'
 
 const workExperienceEntry = (props) => {
+
+    const { index, changeInput, entryInfo } = props;
+
     return (
-        <div className="workExperienceEntry">
-        </div>
+        <form className = 'workExperienceEntry' data-work-experience-form={index}>
+            <span>
+            <label for="role">Role:</label>
+            <input type="text" name="role" onChange={(e) => changeInput(e, index, 'role')} value={entryInfo.role} />
+            </span>
+            
+            <span>
+            <label for="company">Company:</label>
+            <input type="text" name="company" onChange={(e) => changeInput(e, index, 'company')} value={entryInfo.company}/>
+            </span>
+            
+            <span>
+            <label for="start-date">Start Date:</label>
+            <input type="text" name="start-date" onChange={(e) => changeInput(e, index, 'start-date')} value={entryInfo.startDate}/> {/* Make this one of those date selectors when you learn how to use those */}
+            
+            <label for="end-date">End Date:</label>
+            <input type="text" name="end-date" onChange={(e) => changeInput(e, index, 'end-date')} value={entryInfo.endDate}/> {/* Make this one of those date selectors when you learn how to use those */}
+            </span>
+            
+            <span>
+            <label for="description">Responsibilities / Accomplishments:</label>
+            <textarea name="description" onChange={(e) => changeInput(e, index, 'description')} value={entryInfo.description}/>
+            </span>
+        </form>
     )
 }
 
