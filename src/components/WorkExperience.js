@@ -21,6 +21,30 @@ class WorkExperience extends Component {
             })
         });
     }
+
+    onChangeInput = (e, workExperienceEntryIndex, inputType) => {
+        const newValue = e.target.value;
+        const updatedWorkExperienceEntries = [...this.state.workExperienceEntries];
+        switch(inputType) {
+            case 'role':
+                updatedWorkExperienceEntries[workExperienceEntryIndex].role = newValue;
+                break;
+            case 'company':
+                updatedWorkExperienceEntries[workExperienceEntryIndex].company = newValue;
+                break;
+            case 'start-date':
+                updatedWorkExperienceEntries[workExperienceEntryIndex].startDate = newValue;
+                break;
+            case 'end-date':
+                updatedWorkExperienceEntries[workExperienceEntryIndex].endDate = newValue;
+                break;
+            case 'description':
+                updatedWorkExperienceEntries[workExperienceEntryIndex].description = newValue;
+        }
+        this.setState({
+            workExperienceEntries: updatedWorkExperienceEntries,
+        })
+    }
     
 
     render() {
@@ -34,7 +58,7 @@ class WorkExperience extends Component {
                     <form data-work-experience-form={index}>
                         <span>
                         <label for="role">Role:</label>
-                        <input type="text" name="role" value={entry.role} />
+                        <input type="text" name="role" onChange={(e) => this.onChangeInput(e, index, 'role')} value={entry.role} />
                         </span>
             
                         <span>
