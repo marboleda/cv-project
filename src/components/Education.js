@@ -9,6 +9,8 @@ class Education extends Component {
             educationEntries: [],
             editingEducation: true,
         };
+
+        this.onChangeInput = this.onChangeInput.bind(this);
     }
 
     addButtonHandler = () => {
@@ -19,6 +21,27 @@ class Education extends Component {
                 startDate: '',
                 endDate: '',
             })
+        });
+    }
+
+    onChangeInput = (e, educationEntryIndex, inputType) => {
+        const newValue = e.target.value;
+        const updatedEducationEntries = [...this.state.educationEntries];
+        switch(inputType) {
+            case 'title':
+                updatedEducationEntries[educationEntryIndex].title = e.target.value;
+                break;
+            case 'school':
+                updatedEducationEntries[educationEntryIndex].school = e.target.value;
+                break;
+            case 'start-date':
+                updatedEducationEntries[educationEntryIndex].startDate = e.target.value;
+                break;
+            case 'end-date':
+                updatedEducationEntries[educationEntryIndex].endDate = e.target.value;
+        }
+        this.setState({
+            educationEntries: updatedEducationEntries,
         });
     }
 
@@ -33,6 +56,8 @@ class Education extends Component {
                         <EducationEntry
                             isEditing={editingEducation}
                             index={index}
+                            changeInput={this.onChangeInput}
+                            entryInfo={entry}
                         />
                     )
                 })}
