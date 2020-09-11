@@ -6,7 +6,8 @@ class WorkExperience extends Component {
         super(props);
 
         this.state = {
-            workExperienceEntries: []
+            workExperienceEntries: [],
+            editingWorkExperience: true,
         }
 
         this.onChangeInput = this.onChangeInput.bind(this);
@@ -47,19 +48,26 @@ class WorkExperience extends Component {
             workExperienceEntries: updatedWorkExperienceEntries,
         })
     }
+
+    submitButtonHandler = () => {
+        this.setState({
+            editingWorkExperience: false,
+        });
+    }
     
 
     render() {
-        const { workExperienceEntries } = this.state;
+        const { workExperienceEntries, editingWorkExperience } = this.state;
 
         return(
             <div className="workExperience">
                 <h2>Work Experience</h2>
                 {workExperienceEntries.map((entry, index) => {
                     return (
-                    <WorkExperienceEntry index={index} changeInput={this.onChangeInput} entryInfo={entry}/>)
+                    <WorkExperienceEntry isEditing={editingWorkExperience} index={index} changeInput={this.onChangeInput} entryInfo={entry}/>)
                 })}
-                <button onClick={this.addButtonHandler}>Add</button>
+                {editingWorkExperience ? (<button onClick={this.addButtonHandler}>Add</button>) : null}
+                <button onClick={this.submitButtonHandler}>Submit</button>
             </div>
         )
     }
