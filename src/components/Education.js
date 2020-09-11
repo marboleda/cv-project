@@ -45,6 +45,12 @@ class Education extends Component {
         });
     }
 
+    submitButtonHandler = () => {
+        this.setState({
+            editingEducation: false,
+        });
+    }
+
     render() {
         const { educationEntries, editingEducation } = this.state;
 
@@ -61,7 +67,8 @@ class Education extends Component {
                         />
                     )
                 })}
-                <button onClick={this.addButtonHandler}>Add</button>
+                { editingEducation ? (<button onClick={this.addButtonHandler}>Add</button>) : null }
+                <button onClick={this.submitButtonHandler}>Submit</button>
             </div>
         )
     }
