@@ -30,8 +30,8 @@ const educationEntry = (props) => {
             </div>
         ) : (
             <div className='educationEntry'>
-                <span class='title'>{entryInfo.title}</span>
-                <span class='school-and-dates'>{entryInfo.school} ({entryInfo.startDate}-{entryInfo.endDate})</span>
+                <span className='title'>{entryInfo.title}</span>
+                <span className='school-and-dates'>{entryInfo.school} ({entryInfo.startDate}-{entryInfo.endDate})</span>
             </div>
             )}
         </div>
