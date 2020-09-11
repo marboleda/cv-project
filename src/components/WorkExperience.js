@@ -64,7 +64,12 @@ class WorkExperience extends Component {
                 <h2>Work Experience</h2>
                 {workExperienceEntries.map((entry, index) => {
                     return (
-                    <WorkExperienceEntry isEditing={editingWorkExperience} index={index} changeInput={this.onChangeInput} entryInfo={entry}/>)
+                    <WorkExperienceEntry 
+                        isEditing={editingWorkExperience} 
+                        index={index} 
+                        changeInput={this.onChangeInput} 
+                        entryInfo={entry}/>
+                    )
                 })}
                 {editingWorkExperience ? (<button onClick={this.addButtonHandler}>Add</button>) : null}
                 <button onClick={this.submitButtonHandler}>Submit</button>
