@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import WorkExperienceEntry from './WorkExperienceEntry'
+import './WorkExperience.css'
 
 class WorkExperience extends Component {
     constructor(props) {
