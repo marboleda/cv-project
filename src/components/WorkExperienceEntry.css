@@ -1,6 +1,26 @@
-.workExperienceEntry, .workExperienceForm {
+.workExperienceForm {
     display: flex;
     flex-direction: column;
+
+}
+
+.workExperienceEntry, .workExperienceForm {
     margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
+}
+
+.workExperienceEntry {
+    padding-right: 20vw;
+}
+
+.role {
+    font-weight: bold;
+}
+
+.work-dates {
+    float: right;
+}
+
+.work-experience-description {
+    white-space: pre-wrap;
 }

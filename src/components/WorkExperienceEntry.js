@@ -35,7 +35,7 @@ const workExperienceEntry = (props) => {
         ) : (
             <div className = 'workExperienceEntry'>
                 <span class='role'>{entryInfo.role}</span>, {entryInfo.company} <span class='work-dates'>{entryInfo.startDate}-{entryInfo.endDate}</span>
-                <div className = 'workExperienceDescription'>
+                <div className = 'work-experience-description'>
                     {entryInfo.description}
                 </div>
             </div>
