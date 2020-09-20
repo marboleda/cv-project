@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const generalInfo = (props) => {
     if (props.isEditing) {
         return(
@@ -11,20 +12,26 @@ const generalInfo = (props) => {
                 
                     <h2>General Info</h2>
 
+                    <div>
                     <label for="name">
                         <strong>Name:</strong>
                     </label>
                     <input type="text" name="name" onChange={props.nameChange} value={props.name} required />
+                    </div>
 
+                    <div>
                     <label for="email">
                         <strong>Email:</strong>
                     </label>
                     <input type="text" name="email" onChange={props.emailChange} value={props.email} />
+                    </div>
 
+                    <div>
                     <label for="phone">
                         <strong>Phone Number:</strong>
                     </label>
                     <input type="text" name="phone" onChange={props.phoneChange} value={props.phone}/>
+                    </div>
 
                     <button type="submit">Submit</button>
                 </form>
