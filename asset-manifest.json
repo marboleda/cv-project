@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/marboleda/cv-project/static/css/main.4037c3ab.chunk.css",
-    "main.js": "/marboleda/cv-project/static/js/main.de2946a9.chunk.js",
-    "main.js.map": "/marboleda/cv-project/static/js/main.de2946a9.chunk.js.map",
-    "runtime-main.js": "/marboleda/cv-project/static/js/runtime-main.ee0fcbaf.js",
-    "runtime-main.js.map": "/marboleda/cv-project/static/js/runtime-main.ee0fcbaf.js.map",
-    "static/js/2.1e1cfc50.chunk.js": "/marboleda/cv-project/static/js/2.1e1cfc50.chunk.js",
-    "static/js/2.1e1cfc50.chunk.js.map": "/marboleda/cv-project/static/js/2.1e1cfc50.chunk.js.map",
-    "index.html": "/marboleda/cv-project/index.html",
-    "precache-manifest.94951c7bd1b5ea95315e1b45be1e03f5.js": "/marboleda/cv-project/precache-manifest.94951c7bd1b5ea95315e1b45be1e03f5.js",
-    "service-worker.js": "/marboleda/cv-project/service-worker.js",
-    "static/css/main.4037c3ab.chunk.css.map": "/marboleda/cv-project/static/css/main.4037c3ab.chunk.css.map",
-    "static/js/2.1e1cfc50.chunk.js.LICENSE.txt": "/marboleda/cv-project/static/js/2.1e1cfc50.chunk.js.LICENSE.txt"
+    "main.css": "/cv-project/static/css/main.4037c3ab.chunk.css",
+    "main.js": "/cv-project/static/js/main.de2946a9.chunk.js",
+    "main.js.map": "/cv-project/static/js/main.de2946a9.chunk.js.map",
+    "runtime-main.js": "/cv-project/static/js/runtime-main.d91c792d.js",
+    "runtime-main.js.map": "/cv-project/static/js/runtime-main.d91c792d.js.map",
+    "static/js/2.1e1cfc50.chunk.js": "/cv-project/static/js/2.1e1cfc50.chunk.js",
+    "static/js/2.1e1cfc50.chunk.js.map": "/cv-project/static/js/2.1e1cfc50.chunk.js.map",
+    "index.html": "/cv-project/index.html",
+    "precache-manifest.576f51ee5afb9083273f1668c94d331e.js": "/cv-project/precache-manifest.576f51ee5afb9083273f1668c94d331e.js",
+    "service-worker.js": "/cv-project/service-worker.js",
+    "static/css/main.4037c3ab.chunk.css.map": "/cv-project/static/css/main.4037c3ab.chunk.css.map",
+    "static/js/2.1e1cfc50.chunk.js.LICENSE.txt": "/cv-project/static/js/2.1e1cfc50.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.ee0fcbaf.js",
+    "static/js/runtime-main.d91c792d.js",
     "static/js/2.1e1cfc50.chunk.js",
     "static/css/main.4037c3ab.chunk.css",
     "static/js/main.de2946a9.chunk.js"
