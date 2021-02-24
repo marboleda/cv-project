@@ -21,10 +21,10 @@ const workExperienceEntry = (props) => {
                 
                 <span>
                 <label for="start-date">Start Date:</label>
-                <input type="text" name="start-date" onChange={(e) => changeInput(e, index, 'start-date')} value={entryInfo.startDate}/> {/* Make this one of those date selectors when you learn how to use those */}
+                <input type="date" name="start-date" onChange={(e) => changeInput(e, index, 'start-date')} value={entryInfo.startDate}/>
                 
                 <label for="end-date">End Date:</label>
-                <input type="text" name="end-date" onChange={(e) => changeInput(e, index, 'end-date')} value={entryInfo.endDate}/> {/* Make this one of those date selectors when you learn how to use those */}
+                <input type="date" name="end-date" onChange={(e) => changeInput(e, index, 'end-date')} value={entryInfo.endDate}/>
                 </span>
                 
                 <span>
@@ -34,7 +34,7 @@ const workExperienceEntry = (props) => {
             </form>
         ) : (
             <div className = 'workExperienceEntry'>
-                <span class='role'>{entryInfo.role}</span>, {entryInfo.company} <span class='work-dates'>{entryInfo.startDate}-{entryInfo.endDate}</span>
+                <span class='role'>{entryInfo.role}</span>, {entryInfo.company} <span class='work-dates'>{entryInfo.startDate} to {entryInfo.endDate}</span>
                 <div className = 'work-experience-description'>
                     {entryInfo.description}
                 </div>

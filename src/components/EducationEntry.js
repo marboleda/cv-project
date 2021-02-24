@@ -20,18 +20,18 @@ const educationEntry = (props) => {
 
                 <span>
                 <label for="start-date">Start Date:</label>
-                <input type="text" name="start-date" onChange={(e) => changeInput(e, index, 'start-date')} value={entryInfo.startDate} /> {/* Make this one of those date selectors when you learn how to use those */}
+                <input type="date" name="start-date" onChange={(e) => changeInput(e, index, 'start-date')} value={entryInfo.startDate} />
                 </span>
 
                 <span>
                 <label for="end-date">End Date:</label>
-                <input type="text" name="end-date" onChange={(e) => changeInput(e, index, 'end-date')} value={entryInfo.endDate} /> {/* Make this one of those date selectors when you learn how to use those */}
+                <input type="date" name="end-date" onChange={(e) => changeInput(e, index, 'end-date')} value={entryInfo.endDate} />
                 </span>
             </div>
         ) : (
             <div className='educationEntry'>
                 <span className='title'>{entryInfo.title}</span>
-                <span className='school-and-dates'>{entryInfo.school} ({entryInfo.startDate}-{entryInfo.endDate})</span>
+                <span className='school-and-dates'>{entryInfo.school} ({entryInfo.startDate} to {entryInfo.endDate})</span>
             </div>
             )}
         </div>
